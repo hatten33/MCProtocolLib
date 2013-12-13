@@ -19,7 +19,7 @@ public class Constants {
 		/**
 		 * The current protocol version.
 		 */
-		public static final byte PROTOCOL_VERSION = 74;
+		public static final byte PROTOCOL_VERSION = 78;
 
 		/**
 		 * The current game version.
