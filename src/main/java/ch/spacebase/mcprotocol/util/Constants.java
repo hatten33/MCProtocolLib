@@ -24,7 +24,7 @@ public class Constants {
 		/**
 		 * The current game version.
 		 */
-		public static final String MINECRAFT_VERSION = "1.6.2";
+		public static final String MINECRAFT_VERSION = "1.6.4";
 
 		/**
 		 * The server list ping magic value.
