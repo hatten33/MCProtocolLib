@@ -33,6 +33,7 @@ import ch.spacebase.mc.protocol.packet.ingame.client.window.ClientEnchantItemPac
 import ch.spacebase.mc.protocol.packet.ingame.client.window.ClientWindowActionPacket;
 import ch.spacebase.mc.protocol.packet.ingame.client.world.ClientUpdateSignPacket;
 import ch.spacebase.mc.protocol.packet.ingame.server.ServerChatPacket;
+import ch.spacebase.mc.protocol.packet.ingame.server.ServerDifficultyPacket;
 import ch.spacebase.mc.protocol.packet.ingame.server.ServerDisconnectPacket;
 import ch.spacebase.mc.protocol.packet.ingame.server.ServerJoinGamePacket;
 import ch.spacebase.mc.protocol.packet.ingame.server.ServerKeepAlivePacket;
@@ -325,6 +326,7 @@ public class MinecraftProtocol extends PacketProtocol {
 		this.registerIncoming(62, ServerTeamPacket.class);
 		this.registerIncoming(63, ServerPluginMessagePacket.class);
 		this.registerIncoming(64, ServerDisconnectPacket.class);
+		this.registerIncoming(65, ServerDifficultyPacket.class);
 		
 		this.registerOutgoing(0, ClientKeepAlivePacket.class);
 		this.registerOutgoing(1, ClientChatPacket.class);
@@ -443,6 +445,7 @@ public class MinecraftProtocol extends PacketProtocol {
 		this.registerOutgoing(62, ServerTeamPacket.class);
 		this.registerOutgoing(63, ServerPluginMessagePacket.class);
 		this.registerOutgoing(64, ServerDisconnectPacket.class);
+		this.registerOutgoing(65, ServerDifficultyPacket.class);
 	}
 	
 	private void initClientStatus(Session session) {
